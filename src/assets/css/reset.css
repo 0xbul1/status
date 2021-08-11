@@ -1,0 +1,22 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: outside none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f8fa url(./assets/background.png) center top;
+  color: #3f4347;
+  font-size: 12px;
+  font-family: sans-serif;
+  line-height: 1;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
