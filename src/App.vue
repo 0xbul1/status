@@ -1,5 +1,22 @@
 <template>
-  <HeatMap :options="chartOptions" :series="series" />
+  <!-- <HeatMap :options="chartOptions" :series="series" /> -->
+  <CalendarHeatmap
+    :values="[
+      { date: '2021-8-01', count: -1 },
+      { date: '2021-8-02', count: 0 },
+      { date: '2021-8-03', count: 1 },
+      { date: '2021-8-04', count: 2 },
+      { date: '2021-8-05', count: 3 },
+      { date: '2021-8-06', count: 4 },
+      { date: '2021-8-07', count: 5 },
+      { date: '2021-8-08', count: 6 },
+      { date: '2021-8-09', count: 7 },
+      { date: '2021-8-10', count: 8 },
+      { date: '2021-8-11', count: 9 },
+      { date: '2021-8-12', count: 10 },
+    ]"
+    :end-date="1628755716609"
+  />
 </template>
 
 <script>
@@ -19,9 +36,11 @@ function generateData(count, yrange) {
   return series;
 }
 import HeatMap from './components/HeatMap.vue';
+import CalendarHeatmap from './components/CalendarHeatmap.vue';
 export default {
   components: {
     HeatMap,
+    CalendarHeatmap,
   },
   data: function () {
     return {
